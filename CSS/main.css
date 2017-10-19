@@ -1,0 +1,68 @@
+body{
+  font-family: sans-serif;
+  padding: 5px;
+}
+
+/*CSS permite agrupar todas las reglas individuales en una sola regla con un selector
+multiple. Para ello, se incluyen todos los selectores separados por una coma(,)*/
+
+/*selector descendente*/
+header h1{
+  margin-bottom: 3px;
+  margin-top: 0px;
+}
+
+header hr{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*Con "." se llama al selector clase(class)*/
+.biography{
+  /*background-color: red;*/
+  width:68%;/*ancho de pantalla principal (body)*/
+  display: inline-block;
+  font-size: 14px;/*tamaño de letra*/
+  line-height: 1.6;/*espacio entre lineas de texto*/
+
+}
+.summary{
+  /*background-color: green;*/
+  display: inline-block;/*solo abarca su espacio, ya no es bloque*/
+  vertical-align: top;
+  /*width: 20%;
+  margin-top: 15px;*/
+}
+.summary-table{
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  padding: 1px;
+  font-size: 14px;
+}
+
+.summary-table thead th{
+  background-color: #B0C4DE;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 16px;
+
+}
+/*si no se pone first child se centra todo, por eso se especifica*/
+.summary-table tbody tr:first-child{
+  text-align: center;/*para centrar texto*/
+}
+.summary-table tbody th{
+  text-align: left;/*alinear texto a la izquierda*/
+  font-size: 14px;
+}
+
+
+
+/*el selector id
+
+<p id="destacado">Segundo párrafo</p>
+
+llamando al selector id:
+
+#destacado { color: red; }
+*/
